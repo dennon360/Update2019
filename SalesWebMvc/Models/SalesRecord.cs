@@ -1,11 +1,26 @@
-﻿using System;
+﻿using SalesWebMvc.Models.Enumerations;
+using System;
 
 namespace SalesWebMvc.Models
 {
     public class SalesRecord
     {
-        public int Id { get; private set; }
-        public DateTime Date { get; private set; }
-        public double Amount { get; private set; }
+        public int Id { get; set; }
+        public DateTime Date { get; set; }
+        public double Amount { get; set; }
+        public SaleStatus Status { get; set; }
+        public Seller Seller { get; set; }
+
+        public SalesRecord()
+        {
+        }
+        public SalesRecord(int id, DateTime data, double amount, SaleStatus status, Seller seller)
+        {
+            Id = id;
+            Date = data;
+            Amount = amount;
+            Status = status;
+            Seller = seller;
+        }
     }
 }
