@@ -1,4 +1,4 @@
-﻿using SalesWebMvc.Data;
+﻿using SalesWebMvc.Models;
 using SalesWebMvc.Models;
 using System.Collections.Generic;
 using System.Linq;
